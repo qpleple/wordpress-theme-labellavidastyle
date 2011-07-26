@@ -1,13 +1,8 @@
 <div id="sidebar">
     <div class="sidebar-block">
         <div id="welcome">
-            <?php echo get_page_by_title("Welcome")->post_content ?>    
+            <?php echo nl2br(get_page_by_title("Welcome")->post_content) ?>    
         </div>
-    </div>
-    
-    <div class="sidebar-block">
-        <h1>Search</h1>
-        <?php echo get_search_form() ?>
     </div>
 
 	<div class="sidebar-block">
@@ -26,7 +21,12 @@
             <div id="contributors-title">
                 <h1>Contributors</h1>
             </div>
-            <?php echo do_shortcode('[authoravatars avatar_size=50 show_name=true show_biography=true render_as_list=true order=date_registered link_to_authorpage=false]') ?>
+            <?php echo nl2br(do_shortcode('[authoravatars avatar_size=50 show_name=true show_biography=true render_as_list=true order=date_registered link_to_authorpage=false]')) ?>
         </div>
+    </div>
+    
+    <div class="sidebar-block">
+        <h1>Search</h1>
+        <?php echo get_search_form() ?>
     </div>
 </div>

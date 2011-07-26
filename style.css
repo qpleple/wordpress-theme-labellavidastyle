@@ -1,5 +1,7 @@
 /*
 Theme Name: Bella Vida
+Author: Quentin Pleplé <quentin.pleple@gmail.com>
+Version: v1
 */
 
 @import url("base.css");
@@ -32,7 +34,9 @@ h1, h2, h3 {
   -moz-border-radius:    30px;
   -webkit-border-radius: 30px;
   
-  box-shadow: 0 0 10px black;
+  box-shadow:         0 0 10px black;
+  -moz-box-shadow:    0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
 }
 
 #content-main {
@@ -62,7 +66,7 @@ p {
 #menu {
   list-style: none;
   height: 41px;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 6px 40px;
 }
 
 #menu li {
@@ -70,23 +74,30 @@ p {
 }
 
 #menu li + li {
-  margin-left: 43px;
+  margin-left: 20px;
 }
 
 #menu li a {
   display: block;
   padding: 3px;
-  /* color: #ccff33; */
-  /* background: url('images/btn-menu.png') no-repeat top left; */
-  background: #CCC;
+  box-shadow:         0 -2px 5px #444;
+  -moz-box-shadow:    0 -2px 5px #444;
+  -webkit-box-shadow: 0 -2px 5px #444;
+
+  background: white;
   width: 159px;
   height: 41px;
-  -moz-border-radius:    5px;
-  -webkit-border-radius: 5px;
-  border-radius:         5px;
+  border-radius:         5px 5px 0 0;
+  -moz-border-radius:    5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
   line-height: 41px;
   text-align: center;
   font-family: "Impact", "Arial Black";
+  color: black;
+}
+
+#menu li a:hover {
+    color: #555;
 }
 
 /**************************************
@@ -95,19 +106,68 @@ p {
 
 #sidebar {
   float: right;
-  width: 200px;
-  margin: 0 60px 0 0;
-  font-size: 14px;
+  width: 210px;
+  margin: 0 50px 0 0;
+  font-size: 13px;
 }
 
 div.sidebar-block + div.sidebar-block {
     margin-top: 30px;
 }
 
+.author-list .user + .user {
+    margin-top: 40px;
+}
+
+.author-list .avatar {
+    margin-right: 15px !important;
+}
+
+.cat-item {
+    font-family: "Impact", "Arial Black";
+    margin-left: 10px;
+    font-size: 22px;
+    border-left: 4px solid #777;
+    padding-left: 5px;
+}
+
+.cat-item a {
+    color: black;
+}
+
+.cat-item a:hover {
+    color: #555;
+}
+
+.cat-item + .cat-item {
+    margin-top: 5px;
+}
 
 /**************************************
   Posts
 **************************************/
 div.post + div.post {
     margin-top: 60px;
+}
+
+.post-metadata {
+    font-style: italic;
+    color: #555;
+}
+
+h2.post-title a {
+    color: black;
+}
+
+h2.post-title a:hover {
+    color: #555;
+}
+
+div.post-thumbnail {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+div.post-thumbnail img {
+    max-width: 650px;
 }

@@ -22,7 +22,7 @@
 <div id="container">
     
     <div id="header">
-        <div id="banner"></div>
+        <a href="<?php bloginfo('url') ?> "><div id="banner"></div></a>
         <div id="menu">
             <li><a href="<?php echo get_category_link(get_category_by_slug('blog')) ?>">Bella Blog</a></li>
             <li><a href="<?php echo get_category_link(get_category_by_slug('boutique')) ?>">Bella Boutique</a></li>
