@@ -1,0 +1,113 @@
+/*
+Theme Name: Bella Vida
+*/
+
+@import url("base.css");
+
+/**************************************
+  Structure & general stuff
+**************************************/
+body {
+  background: url('images/bg-floral.jpg');
+  font-family: Verdana;
+}
+
+
+h1, h2, h3 {
+    margin: 40px 0 20px 0;
+    font-family: "Impact", "Arial Black";    
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#content {
+  background: white;
+  margin-bottom: 60px;
+  padding: 20px 0 60px 0;
+  
+  border-radius:         30px;
+  -moz-border-radius:    30px;
+  -webkit-border-radius: 30px;
+  
+  box-shadow: 0 0 10px black;
+}
+
+#content-main {
+    padding: 0 300px 0 60px;
+}
+
+
+p {
+  margin: 10px 0;
+}
+
+/**************************************
+  Header
+**************************************/
+
+
+#banner {
+  height: 280px;
+  background: black url('images/labellavida_sticker_crop.jpg') no-repeat center center;
+  -moz-border-radius:    50px;
+  -webkit-border-radius: 50px;
+  border-radius:         50px;
+  margin-top: 20px;
+
+}
+
+#menu {
+  list-style: none;
+  height: 41px;
+  margin: 10px 0 20px 0;
+}
+
+#menu li {
+  float: left;
+}
+
+#menu li + li {
+  margin-left: 43px;
+}
+
+#menu li a {
+  display: block;
+  padding: 3px;
+  /* color: #ccff33; */
+  /* background: url('images/btn-menu.png') no-repeat top left; */
+  background: #CCC;
+  width: 159px;
+  height: 41px;
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+  line-height: 41px;
+  text-align: center;
+  font-family: "Impact", "Arial Black";
+}
+
+/**************************************
+  Sidebar
+**************************************/
+
+#sidebar {
+  float: right;
+  width: 200px;
+  margin: 0 60px 0 0;
+  font-size: 14px;
+}
+
+div.sidebar-block + div.sidebar-block {
+    margin-top: 30px;
+}
+
+
+/**************************************
+  Posts
+**************************************/
+div.post + div.post {
+    margin-top: 60px;
+}
